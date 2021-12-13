@@ -1,0 +1,181 @@
+/* color palette from https://www.color-hex.com/color-palettes */
+:root {
+  --darkest-color: #858585;
+  --lightest-color: #ffffff;
+  --highlight-color: #ffffff;
+  --bright-color-1: #ffffff;
+  --bright-color-2: #ffffff;
+  --bright-color-3: #ffffff;
+  --bright-color-4: #ffffff;
+}
+
+body {
+  background: var(--darkest-color);
+  color: var(--lightest-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.circle-shape {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid var(--lightest-color);
+  margin: 0 auto;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+a {
+  color: var(--lightest-color);
+  text-decoration: none;
+
+}
+
+.ig-link {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.link-list-item {
+  border: 1px solid var(--lightest-color);
+  box-sizing: border-box;
+  margin: 20px auto;
+  color: var(--darkest-color);
+  padding: 15px;
+  text-align: center;
+  transition: all 0.15s;
+  border-radius: 23px;
+}
+
+.link-list-item-diferent {
+  height: 120px;
+  width: 120px;
+  border: 1px solid var(--lightest-color);
+  box-sizing: border-box;
+  margin: 20px auto;
+  color: var(--darkest-color);
+  padding: 15px;
+  text-align: center;
+  transition: all 0.15s;
+  border-radius: 30px;
+}
+
+.link-list-item-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.highlighted,
+.link-list-item:hover,
+a:hover {
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
+  text-shadow: 0 0 2em var(--highlight-color);
+}
+
+.icon-list-img {
+  height: 50px;
+  width: 50px;
+  margin: 3px;
+}
+
+.dark {
+  background: var(--bright-color-1);
+}
+
+.medium {
+  background: var(--bright-color-2);
+}
+
+.light {
+  background: var(--bright-color-3);
+}
+
+.bright {
+  background: var(--bright-color-4);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #b4b4b4;
+	display: flex;
+	align-items:;
+	justify-content:left;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+}
+
+body.dark {
+	background: #000000;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+
